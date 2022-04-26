@@ -63,6 +63,8 @@ export default {
                 .replace("-", "/");
 
               this.bankSlip.expirationDate = `Vencimento: ${brazilianDate}`;
+            } else {
+              this.bankSlip.expirationDate = '';
             }
             
             setTimeout(() => {
